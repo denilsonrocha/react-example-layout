@@ -5,10 +5,16 @@ import Button from '../../components/Button';
 import { Container, SignForm } from './styles';
 
 export default class SignIn extends Component {
+
+  state = {
+    email: '',
+    password: '',
+  };
+
   render() {
     return (
       <Container>
-        <SignForm onSubmit={() => {}}>
+        <SignForm onSubmit={() => { }}>
           <h1>Boas vindas</h1>
           <span>Email</span>
           <input type="email" name="email" />
